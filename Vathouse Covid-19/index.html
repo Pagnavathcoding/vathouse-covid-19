@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./Images/logo.PNG" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VATHOUSE | Covid-19</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="./Images/covid.jpg" />
+    </header>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="./Images/virus.png" /></a>
+        </div>
+        <ul class="menu">
+            <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to Protect
+                    Yourself & Others</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="title">
+            <h1>COVID-19 CORONAVIRUS / WORLD</h1>
+        </div>
+        <div class="content">
+            <div class="col-1">
+                <div class="total">
+                    <div class="total-img">
+                        <img src="./Images/person-add.svg" />
+                    </div>
+                    <h1>Total Cases</h1>
+                    <p id="total"></p>
+                </div>
+                <div class="recover">
+                    <div class="recover-img">
+                        <img src="./Images/accessibility-human.svg" />
+                    </div>
+                    <h1>Recovered</h1>
+                    <p id="recover"></p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="death">
+                    <div class="death-img">
+                        <img src="./Images/neutral-face.svg" />
+                    </div>
+                    <h1>Deaths</h1>
+                    <p id="death"></p>
+                </div>
+                <!-- Populations -->
+                <div class="pop">
+                    <div class="pop-img">
+                        <img src="./Images/people.svg" />
+                    </div>
+                    <h1>Population</h1>
+                    <p id="population"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="timer">
+        <img src="./Images/alarm.svg" />
+        <p id="timer"></p>
+    </div>
+    <!-- display all country name -->
+    <div class="list-country" id="list-country">
+        <div class="close" id="close">
+            <img src="./Images/close.svg" />
+        </div>
+        <!-- Start country name here -->
+        <div class="title-all" id="top">
+            <h1 id="title-all"></h1>
+            <p>These country name must be included in the entry!</p>
+        </div>
+        <div class="top">
+            <a href="#top">
+                <p>Top</p>
+            </a>
+        </div>
+        <div class="display" id="display">
+
+        </div>
+    </div>
+    <section class="countries">
+        <div class="title-country">
+            <h1>COUNTRY</h1>
+        </div>
+        <div class="name-country">
+            <div class="name-all" id="name-all">
+                <div class="grid">
+                    <img src="./Images/grid-alt.svg" />
+                </div>
+                <div class="names">
+                    <p>All Countries Name</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-countries">
+            <div class="country-infos">
+                <div class="img-world">
+                    <img src="" id="flag" />
+                    <div class="line"></div>
+                </div>
+                <div class="country-covid">
+                    <h3 id="name"></h3>
+                    <p id="total-cases"></p>
+                    <p id="total-recovered"></p>
+                    <p id="total-deaths"></p>
+                    <p id="total-population"></p>
+                </div>
+            </div>
+            <div class="search">
+                <p>Input country name.</p>
+                <div class="search-area">
+                    <input type="text" placeholder="Search country..." id="country" value="cambodia" />
+                    <button id="search">Search<img src="./Images/rotate.svg" id="rotate" /></button>
+                </div>
+                <div class="err" id="err">
+                    <p>Your keyword does not exist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright 2021<span id="next-year"></span> | developed by VATHOUSE, All rights reserved.</p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>
